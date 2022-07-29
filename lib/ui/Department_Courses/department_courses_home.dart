@@ -3,11 +3,17 @@ import 'package:flutter_login_screen/app_color/colors.dart';
 import 'package:get/get.dart';
 import '../../widgets/custom_card.dart';
 import 'All_Program/Allied_Health_Science/bs_english_studies.dart';
+import 'All_Program/Allied_Health_Science/bs_psychology.dart';
 import 'All_Program/Computer_Science/bs_computer_science.dart';
 import 'All_Program/Computer_Science/bs_cyber_security.dart';
 import 'All_Program/Computer_Science/bs_data_science.dart';
+import 'All_Program/Computer_Science/bs_game_development.dart';
 import 'All_Program/Computer_Science/bs_information_technology.dart';
+import 'All_Program/Computer_Science/bs_internet_of_thing.dart';
+import 'All_Program/Computer_Science/bs_machine_learning.dart';
+import 'All_Program/Computer_Science/bs_mobile_application.dart';
 import 'All_Program/Computer_Science/bs_software_engineering.dart';
+import 'All_Program/Computer_Science/bs_web_development.dart';
 import 'All_Program/Computer_Science/ms_computer_science.dart';
 import 'All_Program/Management_Science/bs_accounting_finance.dart';
 import 'All_Program/Management_Science/bs_accounting_managment.dart';
@@ -18,6 +24,7 @@ import 'All_Program/Management_Science/mphil_business.dart';
 
 class DepartmentCoursesHome extends StatelessWidget {
   const DepartmentCoursesHome({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -708,18 +715,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://media.istockphoto.com/photos/in-the-evening-creative-young-video-game-developer-works-on-a-desktop-picture-id1269257082?k=20&m=1269257082&s=612x612&w=0&h=Mye_TRDhGAPGFUOJzUngulazxi-pI_8DwRT3c_kosA4='),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS Game Development',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsGameDvelopment());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://media.istockphoto.com/photos/in-the-evening-creative-young-video-game-developer-works-on-a-desktop-picture-id1269257082?k=20&m=1269257082&s=612x612&w=0&h=Mye_TRDhGAPGFUOJzUngulazxi-pI_8DwRT3c_kosA4='),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS Game Development',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -757,18 +765,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?format=jpg&width=960'),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS Machine Learning',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsMachineLearning());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?format=jpg&width=960'),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS Machine Learning',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -784,18 +793,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://datascience.eu/wp-content/uploads/2019/12/iStock-1164502150-978x652.jpg'),
-                            ),
-                            title: Text(
-                              'BS Internet of Things',
-                              style: TextStyle(
-                                fontSize: 11,
-                              ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsInternetOFThings());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://datascience.eu/wp-content/uploads/2019/12/iStock-1164502150-978x652.jpg'),
+                          ),
+                          title: Text(
+                            'BS Internet of Things',
+                            style: TextStyle(
+                              fontSize: 11,
                             ),
                           ),
                         ),
@@ -833,18 +843,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg'),
-                            ),
-                            title: Text(
-                              'BS Web Development',
-                              style: TextStyle(
-                                fontSize: 11,
-                              ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsWebDevelopment());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg'),
+                          ),
+                          title: Text(
+                            'BS Web Development',
+                            style: TextStyle(
+                              fontSize: 11,
                             ),
                           ),
                         ),
@@ -854,18 +865,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://www.hokuapps.com/wp-content/uploads/Custom-Mobile-App-A-Standout-Solution.png'),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS Mobile Application',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsMobileDevelopment());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://www.hokuapps.com/wp-content/uploads/Custom-Mobile-App-A-Standout-Solution.png'),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS Mobile Application',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -1083,18 +1095,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://cdn-prod.medicalnewstoday.com/content/images/articles/154/154874/psychologist.jpg'),
-                            ),
-                            title: Text(
-                              'BS of Psychology',
-                              style: TextStyle(
-                                fontSize: 11,
-                              ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsPhyschology());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://cdn-prod.medicalnewstoday.com/content/images/articles/154/154874/psychologist.jpg'),
+                          ),
+                          title: Text(
+                            'BS of Psychology',
+                            style: TextStyle(
+                              fontSize: 11,
                             ),
                           ),
                         ),

@@ -11,7 +11,7 @@ class BsBusinessAdministration extends StatelessWidget {
       backgroundColor: MyColors.primaryColor,
       appBar: AppBar(
         backgroundColor: MyColors.primaryColor,
-        title: const Text("BBA Science"),
+        title: const Text("BS Business Administration"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -76,7 +76,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Freshman English',
+                                'Principle of Management',
                               ),
                             )
                           ],
@@ -103,7 +103,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Business Administration ',
+                                'Computer System & Application ',
                               ),
                             )
                           ],
@@ -142,7 +142,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Islamic Studies',
+                                'French English -I',
                               ),
                             )
                           ],
@@ -179,7 +179,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Introduction to Business',
+                                'Principle of Marketing ',
                               ),
                             )
                           ],
@@ -226,45 +226,7 @@ class BsBusinessAdministration extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 2,
-                    ),
-                    child: Container(
-                      height: 60,
-                      width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
-                        color: ColorResources.white,
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                          left: 50,
-                        ),
-                        child: Row(
-                          children: const [
-                            Expanded(
-                              flex: 1,
-                              child: Text(
-                                '6',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 40,
-                            ),
-                            Expanded(
-                              flex: 7,
-                              child: Text(
-                                'Introduction to Computer',
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+
                 ],
               ),
             ),
@@ -328,7 +290,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Communication Skills',
+                                'Oral Communication Skills',
                               ),
                             )
                           ],
@@ -366,7 +328,7 @@ class BsBusinessAdministration extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Financial Accounting-I',
+                                'Human Resource Management',
                               ),
                             )
                           ],

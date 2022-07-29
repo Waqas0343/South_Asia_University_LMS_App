@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534912178527",
+    "project_id": "usa-lms",
+    "storage_bucket": "usa-lms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534912178527:android:44ca86c212ff893716feea",
+        "android_client_info": {
+          "package_name": "com.waqas.lms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534912178527-vd7s36k2qq39q58jn2sn22bt712aqne0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcBls_oHvRy0YQ0YOspQtqzDGFLF6aDio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534912178527-vd7s36k2qq39q58jn2sn22bt712aqne0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../all_courses_color/courses_color.dart';
 import '../../../../app_color/colors.dart';
 

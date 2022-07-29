@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_screen/app_color/colors.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import '../../widgets/custom_card.dart';
 import 'All_Program/Allied_Health_Science/bs_english_studies.dart';
 import 'All_Program/Computer_Science/bs_computer_science.dart';
@@ -19,7 +18,6 @@ import 'All_Program/Management_Science/mphil_business.dart';
 
 class DepartmentCoursesHome extends StatelessWidget {
   const DepartmentCoursesHome({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -591,7 +589,7 @@ class DepartmentCoursesHome extends StatelessWidget {
                                 'https://www.incimages.com/uploaded_files/image/1920x1080/getty_180152187_970679970450042_64007.jpg'),
                           ),
                           title: Text(
-                            'MPhil in Business',
+                            'M Phil in Business',
                             style: TextStyle(fontSize: 11),
                           ),
                         ),

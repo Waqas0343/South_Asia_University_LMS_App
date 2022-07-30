@@ -23,7 +23,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icAdmission,
-                  title: "Admission Policy",
+                  title: "University Admission Policy",
                   onTap: () {
                     Get.toNamed(AppRoutes.admissionPolicyHome);
                   },
@@ -35,7 +35,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                     icon: MyIcons.icFee,
-                    title: "Fee and Expenses",
+                    title: "University Fee and Expenses",
                     onTap: () => Get.toNamed(AppRoutes.feeExpenseHome)),
               ),
               const SizedBox(
@@ -92,7 +92,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icCourses,
-                  title: "Courses Enrollment",
+                  title: "Student Courses Enrollment",
                   onTap: () {
                     launchUrlString('https://portal-usa-edu.com/');
                     Get.dialog(const LoadingSpinner());
@@ -105,7 +105,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icLab,
-                  title: "Labs Schedules",
+                  title: "University Practice Labs",
                   onTap: () {
                     Get.toNamed(AppRoutes.labsScheduleHome);
                   },
@@ -141,7 +141,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icExam,
-                  title: "Exams Schedule",
+                  title: "University Exams Schedule",
                   onTap: () {
                     Get.toNamed(AppRoutes.examScheduleHome);
                   },
@@ -201,7 +201,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icSports,
-                  title: "Sports Complex",
+                  title: "University Sports/ Games",
                   onTap: () {
                     Get.toNamed(AppRoutes.sportsComplexHome);
                   },
@@ -213,7 +213,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icSociety,
-                  title: "Clubs & Societies",
+                  title: "University Clubs & Societies",
                   onTap: () {
                     Get.toNamed(AppRoutes.societiesEventHome);
                   },
@@ -225,7 +225,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icComplaint,
-                  title: "Student Complaints",
+                  title: "University Student Complaints",
                   onTap: () {
                     Get.toNamed(AppRoutes.studentComplaintHome);
                   },
@@ -244,12 +244,12 @@ class HomeCard extends StatelessWidget {
               const Text(
                 "University Blogs",
                 style: TextStyle(
-                  fontSize: 13,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 170),
+                padding: const EdgeInsets.only(left: 150),
                 child: RichText(
                   text: TextSpan(
                     text: "",
@@ -277,85 +277,90 @@ class HomeCard extends StatelessWidget {
                   child: Row(
                     children: [
                       CustomCard(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset(
-                                    'assets/images/banners/banner2.png',
-                                    width: 150,
-                                    height: 100,
-                                  ),
-                                  Column(
-                                    children: const [
-                                      Text(
-                                        "What Physical Side",
-                                        style: TextStyle(
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      Text(
-                                        "Effects you can Face",
-                                        style: TextStyle(
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Text(
-                                        "2021-01-04",
-                                        textAlign: TextAlign.left,
-                                        style: TextStyle(
-                                            fontSize: 18.0, color: Colors.grey),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Text(
-                              "We often hear about the real danger of getting to ",
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                  fontSize: 16.0, color: Colors.grey[700]),
-                            ),
-                            Text(
-                              "sleep but on the other end of the spectrum, too ",
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                  fontSize: 16.0, color: Colors.grey[700]),
-                            ),
-                            Text(
-                              "much sleeping and to much rest for health of us. ",
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                  fontSize: 16.0, color: Colors.grey[700]),
-                            ),
-                            const Text(" "),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 210),
-                              child: RichText(
-                                text: TextSpan(
-                                  text: "",
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.indigo[900]),
-                                  children: <TextSpan>[
-                                    TextSpan(
-                                      text: 'Read More',
-                                      recognizer: TapGestureRecognizer()
-                                        ..onTap = () {},
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/banners/banner2.png',
+                                      width: 160,
+                                      height: 90,
+                                    ),
+                                    const SizedBox(
+                                      width: 10,
+                                    ),
+                                    Column(
+                                      children: const [
+                                        Text(
+                                          "Student Birthday Vlog",
+                                          style: TextStyle(
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Text(
+                                          "Effects you can Face",
+                                          style: TextStyle(
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Text(
+                                          "2021-01-04 2022-07-04s",
+                                          textAlign: TextAlign.left,
+                                          style: TextStyle(
+                                              fontSize: 12.0, color: Colors.grey),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
                               ),
-                            ),
-                            const Text(" "),
-                          ],
+                              Text(
+                                "When your birthday comes around, it's a great",
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 16.0, color: Colors.grey[700]),
+                              ),
+                              Text(
+                                " time to take a break from work for a day and ",
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 16.0, color: Colors.grey[700]),
+                              ),
+                              Text("celebrate a whole new chapter of your life. ",
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 16.0, color: Colors.grey[700]),
+                              ),
+                              const Text(" "),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 210),
+                                child: RichText(
+                                  text: TextSpan(
+                                    text: "",
+                                    style: TextStyle(
+                                        fontSize: 16, color: Colors.indigo[900]),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: 'Read More',
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {},
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              const Text(" "),
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -379,32 +384,35 @@ class HomeCard extends StatelessWidget {
                                     width: 150,
                                     height: 100,
                                   ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
                                   Column(
                                     children: const [
                                       Text(
-                                        "Eight Foods That Are",
+                                        "University Student Annual ",
                                         textAlign: TextAlign.left,
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       SizedBox(
                                         height: 5,
                                       ),
                                       Text(
-                                        "Goods and 3 Which Are",
+                                        "Function That are Organize",
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       Text(
-                                        "2021-03-04",
+                                        "2021-03-04 2022-03-07",
                                         textAlign: TextAlign.left,
                                         style: TextStyle(
-                                            fontSize: 18.0, color: Colors.grey),
+                                            fontSize: 14.0, color: Colors.grey),
                                       ),
                                     ],
                                   ),
@@ -472,28 +480,29 @@ class HomeCard extends StatelessWidget {
                                     width: 150,
                                     height: 100,
                                   ),
+                                  SizedBox(width: 10,),
                                   Column(
                                     children: const [
                                       Text(
-                                        "7 Rarest Diseases in ",
+                                        "University Annual Degree ",
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "the World the effected",
+                                        "Convocation By HEC Rules",
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       Text(
-                                        "2021-05-01",
+                                        "2020-01-09     2022-01-07",
                                         textAlign: TextAlign.left,
                                         style: TextStyle(
-                                            fontSize: 18.0, color: Colors.grey),
+                                            fontSize: 14.0, color: Colors.grey),
                                       ),
                                     ],
                                   ),
@@ -561,31 +570,32 @@ class HomeCard extends StatelessWidget {
                                     width: 150,
                                     height: 100,
                                   ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
                                   Column(
                                     children: const [
                                       Text(
-                                        "What Are the Detox",
+                                        "Gold Medalist Student",
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      SizedBox(
-                                        height: 5,
-                                      ),
+
                                       Text(
-                                        "Disadvantages of",
+                                        "at Annual Convocation",
                                         style: TextStyle(
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       Text(
-                                        "2021-07-04",
+                                        "2017-07-04     2022-09-07",
                                         textAlign: TextAlign.left,
                                         style: TextStyle(
-                                            fontSize: 18.0, color: Colors.grey),
+                                            fontSize: 14.0, color: Colors.grey),
                                       ),
                                     ],
                                   ),

@@ -18,7 +18,15 @@ import 'All_Program/Computer_Science/ms_computer_science.dart';
 import 'All_Program/Management_Science/bs_accounting_finance.dart';
 import 'All_Program/Management_Science/bs_accounting_managment.dart';
 import 'All_Program/Management_Science/bs_business_adminstration.dart';
+import 'All_Program/Management_Science/bs_business_information.dart';
+import 'All_Program/Management_Science/bs_business_management.dart';
+import 'All_Program/Management_Science/bs_business_management_science.dart';
+import 'All_Program/Management_Science/bs_digital_marketing.dart';
 import 'All_Program/Management_Science/bs_economics.dart';
+import 'All_Program/Management_Science/bs_entreprenureship.dart';
+import 'All_Program/Management_Science/bs_islamic_banking.dart';
+import 'All_Program/Management_Science/bs_operation_suppy_chain.dart';
+import 'All_Program/Management_Science/bs_public_adminstration.dart';
 import 'All_Program/Management_Science/master_business_adminstration.dart';
 import 'All_Program/Management_Science/mphil_business.dart';
 
@@ -99,18 +107,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://one.comodo.com/blog/images/msp/how-comodo-one-can-help-msps.jpg'),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS of Business information',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsBusinessInformation());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://one.comodo.com/blog/images/msp/how-comodo-one-can-help-msps.jpg'),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS of Business information',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -146,17 +155,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://image.shutterstock.com/image-illustration/public-administration-concept-on-gearwheels-260nw-548636419.jpg'),
-                            ),
-                            title: Text(
-                              'BS Of Public Administration',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsPublicAdministration());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://image.shutterstock.com/image-illustration/public-administration-concept-on-gearwheels-260nw-548636419.jpg'),
+                          ),
+                          title: Text(
+                            'BS Of Public Administration',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -172,18 +182,19 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://w10.naukri.com/mailers/2021/naukri-learning/oct/28oct/What-is-Entrepreneurship-and-Startup.jpg'),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS Entrepreneur',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsEntrepreneurship());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://w10.naukri.com/mailers/2021/naukri-learning/oct/28oct/What-is-Entrepreneurship-and-Startup.jpg'),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS Entrepreneur',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -192,17 +203,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://durhamcollege.ca/wp-content/uploads/scmg-web-image-2021.jpg'),
-                            ),
-                            title: Text(
-                              'BS Operation Supply Chain',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsOperationSupply());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://durhamcollege.ca/wp-content/uploads/scmg-web-image-2021.jpg'),
+                          ),
+                          title: Text(
+                            'BS Operation Supply Chain',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -218,17 +230,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://ilm.iou.edu.gm/wp-content/uploads/2018/09/Islamic-banking-and-finance.jpg'),
-                            ),
-                            title: Text(
-                              'BS Islamic Banking & Finance',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsIslamicBanking());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://ilm.iou.edu.gm/wp-content/uploads/2018/09/Islamic-banking-and-finance.jpg'),
+                          ),
+                          title: Text(
+                            'BS Islamic Banking & Finance',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -265,17 +278,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                   children: [
                     Expanded(
                       child: CustomCard(
-                        child: GestureDetector(
-                          child: const ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://academiamag.com/wp-content/uploads/2022/05/business-management-help-review_141072_large.jpg'),
-                              backgroundColor: Colors.transparent,
-                            ),
-                            title: Text(
-                              'BS of Business Management',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                        onPressed: () {
+                          Get.to(() => const BsBusinessManagement());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://academiamag.com/wp-content/uploads/2022/05/business-management-help-review_141072_large.jpg'),
+                            backgroundColor: Colors.transparent,
+                          ),
+                          title: Text(
+                            'BS of Business Management',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -311,17 +325,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVK_Cb8U6_DWQGJx_zuAN173vLuWPuhPrYQvauZ1G3k06R4Z5JjiOdvYEa7VJH2WfW-k&usqp=CAU'),
-                            ),
-                            title: Text(
-                              'BS of Marketing',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsMarketing());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVK_Cb8U6_DWQGJx_zuAN173vLuWPuhPrYQvauZ1G3k06R4Z5JjiOdvYEa7VJH2WfW-k&usqp=CAU'),
+                          ),
+                          title: Text(
+                            'BS of Marketing',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -330,17 +345,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVecQ7UAj5Y5fixJGs2vLfQmNB_is4OsdUxPRzo13AjtR731V5znjdw3m57Une9XiNa4&usqp=CAU'),
-                            ),
-                            title: Text(
-                              'BS of Management Science',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsBusinessManagementScience());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVecQ7UAj5Y5fixJGs2vLfQmNB_is4OsdUxPRzo13AjtR731V5znjdw3m57Une9XiNa4&usqp=CAU'),
+                          ),
+                          title: Text(
+                            'BS of Management Science',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -356,17 +372,18 @@ class DepartmentCoursesHome extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://thumbs.dreamstime.com/z/modern-head-sign-logo-psychology-profile-human-logotype-creative-style-symbol-design-concept-brand-company-blue-watercolor-98246832.jpg'),
-                            ),
-                            title: Text(
-                              'BS of Accounting',
-                              style: TextStyle(fontSize: 11),
-                            ),
+                      child: CustomCard(
+                        onPressed: () {
+                          Get.to(() => const BsAccountingFinance());
+                        },
+                        child: const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://thumbs.dreamstime.com/z/modern-head-sign-logo-psychology-profile-human-logotype-creative-style-symbol-design-concept-brand-company-blue-watercolor-98246832.jpg'),
+                          ),
+                          title: Text(
+                            'BS of Accounting',
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
@@ -421,141 +438,6 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVXGF4PtjmBg3VZE1L6_PeL3uOqn5-2PRRvKsrH1AGA3qZvd03FDKUNa2wZVD67RUeIM&usqp=CAU'),
-                            ),
-                            title: Text(
-                              'BS of Hospitality and Tourism',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  children: [
-                    Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/9805/9780980526240.jpg'),
-                            ),
-                            title: Text(
-                              'BS of Business Computing',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://neilpatel.com/wp-content/uploads/2021/07/digital-marketing_featured-image.png'),
-                            ),
-                            title: Text(
-                              'BS of Digital Marketing',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  children: [
-                    Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://www.betterteam.com/images/digital-marketing-manager-job-description-5997x3373-20201119.jpeg?crop=21:16,smart&width=420&dpr=2'),
-                            ),
-                            title: Text(
-                              'BS of Management Technology',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://www.turing.ac.uk/sites/default/files/2019-07/economic_data_science.jpg'),
-                            ),
-                            title: Text(
-                              'BS Economics Data Science',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  children: [
-                    Expanded(
-                      child: GestureDetector(
-                        child: const CustomCard(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://studyline.net/wp-content/uploads/2021/07/%D8%AA%D8%AE%D8%B5%D8%B5-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D9%88-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%D8%A7%D8%AA.jpg'),
-                            ),
-                            title: Text(
-                              'BS Aviation Management',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
                       child: CustomCard(
                         onPressed: () {
                           Get.to(() => const MasterBusinessAdministration());
@@ -574,9 +456,6 @@ class DepartmentCoursesHome extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      width: 10,
                     ),
                   ],
                 ),
@@ -1042,6 +921,9 @@ class DepartmentCoursesHome extends StatelessWidget {
                       width: 10,
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
                 Row(
                   children: [

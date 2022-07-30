@@ -27,7 +27,7 @@ class AppPages {
     GetPage(name: AppRoutes.campusViewHome, page: () =>  CampusViewHome()),
     GetPage(name: AppRoutes.departmentCoursesHome, page: () => const DepartmentCoursesHome()),
     GetPage(name: AppRoutes.coursesEnrollment, page: () => const CoursesEnrollmentHome()),
-    GetPage(name: AppRoutes.labsScheduleHome, page: () => const LabScheduleHome()),
+    GetPage(name: AppRoutes.labsScheduleHome, page: () => const LabsHome()),
     GetPage(name: AppRoutes.examScheduleHome, page: () => const  ExamScheduleHome()),
     GetPage(name: AppRoutes.fypTeacherProfile, page: () => const FypTeacherHome()),
     GetPage(name: AppRoutes.studentHostelHome, page: () => const StudentHostelHome()),

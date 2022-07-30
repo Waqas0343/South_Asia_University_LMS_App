@@ -152,7 +152,7 @@ class _HomeState extends State<HomeScreen> {
                   ),
                 ),
                 title: const Text(
-                  'Uni Cafeteria',
+                  'University Cafe',
                   style: TextStyle(color: Colors.black),
                 ),
                 trailing: Transform.rotate(
@@ -225,7 +225,7 @@ class _HomeState extends State<HomeScreen> {
                   ),
                 ),
                 onTap: () {
-                  context.read<AuthenticationBloc>().add(LogoutEvent());
+                  Get.toNamed(AppRoutes.studentComplaintHome);
                 },
               ),
               ListTile(

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../all_courses_color/courses_color.dart';
 import '../../../../app_color/colors.dart';
 
-class BsBusinessManagement extends StatelessWidget {
-  const BsBusinessManagement({Key? key}) : super(key: key);
+class BsBusinessManagementScience extends StatelessWidget {
+  const BsBusinessManagementScience({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class BsBusinessManagement extends StatelessWidget {
       backgroundColor: MyColors.primaryColor,
       appBar: AppBar(
         backgroundColor: MyColors.primaryColor,
-        title: const Text("BS Business Management"),
+        title: const Text("BS Business Management Science"),
       ),
       body: SingleChildScrollView(
         child: Column(

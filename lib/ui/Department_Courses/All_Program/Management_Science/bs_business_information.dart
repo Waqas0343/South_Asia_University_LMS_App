@@ -897,7 +897,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Management',
+                                'Business Analytics ',
                               ),
                             )
                           ],
@@ -975,7 +975,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Statistical Inference',
+                                'Managing Big Data: Model and Decision',
                               ),
                             )
                           ],
@@ -1112,7 +1112,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Organizational Behavior',
+                                'Operation Analysis-II',
                               ),
                             )
                           ],
@@ -1229,7 +1229,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Economy of Pakistan',
+                                'Optimization Method in Business Analytic',
                               ),
                             )
                           ],
@@ -1377,7 +1377,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Arabic',
+                                'People Analytics',
                               ),
                             )
                           ],
@@ -1455,7 +1455,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Operational Management',
+                                'Customer Analyics',
                               ),
                             )
                           ],
@@ -1563,7 +1563,7 @@ class BsBusinessInformation extends StatelessWidget {
                             Expanded(
                               flex: 7,
                               child: Text(
-                                'Businesses Ethic and Corporate Governance',
+                                'IT and Business Transformation',
                               ),
                             )
                           ],

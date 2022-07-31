@@ -8,12 +8,8 @@ import 'package:flutter_login_screen/ui/auth/welcome/welcome_screen.dart';
 import 'package:flutter_login_screen/widgets/home_card.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
-
 import '../../routes/routes.dart';
-import '../Profile_Setting/profile_setting_home.dart';
 import 'banners/home_banner.dart';
 
 class HomeScreen extends StatefulWidget {

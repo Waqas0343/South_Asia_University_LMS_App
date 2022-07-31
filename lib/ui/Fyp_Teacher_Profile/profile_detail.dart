@@ -1,8 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
-import '../../app_Icons/profile_icon.dart';
-import '../../app_theme/profile_them.dart';
+import 'package:get/get.dart';
+import '../../app_color/colors.dart';
+import '../../widgets/teacher_profile.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -10,255 +9,196 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: MyColors.primaryColor,
+        title: const Text("Student FYP Teacher"),
+        centerTitle: true,
+      ),
       body: ListView(
         children: [
-          SizedBox(
-            height: 350,
-            child: Stack(
-              children: [
-                Container(
-                  height: 350,
-                  width: MediaQuery.of(context).size.width * 9.9,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/b2.jpg"),
-                      fit: BoxFit.fill,
-                    ),
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(16),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * .2,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          icon: const Icon(
-                            AppIcon.print,
-                            color: Colors.black45,
-                          ),
-                          onPressed: () {},
-                        ),
-                        IconButton(
-                          icon: const Icon(
-                            AppIcon.gift,
-                            color: Colors.purple,
-                          ),
-                          onPressed: () {},
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 50, right: 30),
-                    child: _buildInfo(context),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          IconButton(
-                            icon: const Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.white,
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                          const Text(
-                            "Contract",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 24,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      const Text(
-                        "As of date 13.02.2021",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 24),
-          _buildTaskList(),
-          _buildBudget(),
           Padding(
-            padding: const EdgeInsets.all(12),
-            child: FlatButton(
-              onPressed: () {},
-              color: Themes.textColor.withAlpha(100),
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(24),
-                ),
-              ),
-              padding: const EdgeInsets.all(12),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(
-                    AppIcon.paperclip,
-                    color: Themes.textColor,
-                  ),
-                  const SizedBox(width: 12),
-                  Text(
-                    "Upload Invoice",
-                    style: TextStyle(color: Themes.textColor),
-                  ),
-                ],
+            padding: const EdgeInsets.only(left: 16.0 ,top: 10.0),
+            child: Text(
+              "Computer Science Teacher That have slot for FYP!",
+              style: Get.textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 16.0,
               ),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              height: 214,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: 9,
+                itemBuilder: (BuildContext context, int i) {
+                  return const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ProfileCard(
+                      imagePath:
+                          "https://images-static.nykaa.com/media/catalog/product/b/6/b6e7a05NYKNBDDRX0008_1.jpg",
+                      title: "TOUCH CONDOMS RIBBED",
+                      known: "Reckitt Benckiser",
+                      discount: " 849.72",
+                      discounted: 'Rs.806.25',
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0 ,top: 10.0),
+            child: Text(
+              "Business Administration Teacher That have slot for FYP!",
+              style: Get.textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              height: 214,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: 9,
+                itemBuilder: (BuildContext context, int i) {
+                  return const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ProfileCard(
+                      imagePath:
+                          "https://i0.wp.com/fairo.pk/wp-content/uploads/2020/04/evenflo-plus-250ml-green.jpg?fit=1000%2C1000&ssl=1",
+                      title: "TOUCH CONDOMS RIBBED",
+                      known: "Reckitt Benckiser",
+                      discount: " 849.72",
+                      discounted: 'Rs.806.25',
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0 ,top: 10.0),
+            child: Text(
+              "Fashion Designing Teacher That have slot for FYP!",
+              style: Get.textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              height: 214,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: 9,
+                itemBuilder: (BuildContext context, int i) {
+                  return const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ProfileCard(
+                      imagePath:
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr0t6pSwUuSxQ1oIfoi8YNxOPd1KCaP88Of-Zs6huo6T4_ohTTQ09kCaxmmf8TRHHfHA0&usqp=CAU",
+                      title: "TOUCH CONDOMS RIBBED",
+                      known: "Reckitt Benckiser",
+                      discount: " 849.72",
+                      discounted: 'Rs.806.25',
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0 ,top: 10.0),
+            child: Text(
+              "Architecture Engineering Teacher That have slot for FYP!",
+              style: Get.textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 15.0,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              height: 214,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: 9,
+                itemBuilder: (BuildContext context, int i) {
+                  return const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ProfileCard(
+                      imagePath:
+                          "https://cf.shopee.com.my/file/880f407a53d80dec2d8b2c9eb368441d",
+                      title: "TOUCH CONDOMS RIBBED",
+                      known: "Reckitt Benckiser",
+                      discount: " 849.72",
+                      discounted: 'Rs.806.25',
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0 ,top: 10.0),
+            child: Text(
+              "Doctor of Physiotherapy Teacher That have slot for FYP!",
+              style: Get.textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              height: 214,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: 9,
+                itemBuilder: (BuildContext context, int i) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ProfileCard(
+                      imagePath:
+                          "https://estore.caring2u.com/pub/media/catalog/product/cache/dfbd69db473622ce6d693c1ffab26f60/_/0/_0_1_0155641_b.jpg",
+                      title: "TOUCH CONDOMS RIBBED",
+                      known: "Reckitt Benckiser",
+                      discount: " 849.72",
+                      discounted: 'Rs.806.25',
+                      removeFromCart: () {},
+                      isAdded: false,
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
         ],
-      ),
-    );
-  }
-
-  Padding _buildBudget() {
-    return Padding(
-      padding: const EdgeInsets.all(12),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const[
-              Text(
-                "Budget",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-               Text(
-                "\$8,950",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 32,
-                ),
-              ),
-            ],
-          ),
-          const Text(
-            "Patrick Barker",
-            style: TextStyle(fontSize: 32, fontFamily: "DancingScript"),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Padding _buildTaskList() {
-    return Padding(
-      padding: const EdgeInsets.all(12),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          Text(
-            "Main Tasks List",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 12),
-          Text(
-            "- Design and implement smartphone application",
-            style: TextStyle(color: Colors.black45, height: 1.5),
-          ),
-          Text(
-            "- Maintain app development tools",
-            style: TextStyle(color: Colors.black45, height: 1.5),
-          ),
-          Text(
-            "- Resolve reported bug",
-            style: TextStyle(color: Colors.black45, height: 1.5),
-          ),
-          Text(
-            "- Participate in end-to-end system integration test",
-            style: TextStyle(color: Colors.black45, height: 1.5),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildInfo(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.bottomLeft,
-            end: Alignment.topRight,
-            colors: [
-              Themes.bg1,
-              Themes.bg2,
-            ],
-          ),
-          borderRadius: const BorderRadius.all(
-            Radius.circular(16),
-          ),
-          boxShadow: const [
-            BoxShadow(
-              blurRadius: 24,
-              offset: Offset(1, 5),
-              color: Colors.black54,
-            ),
-          ]),
-      child: Container(
-        width: MediaQuery.of(context).size.width * .6,
-        height: 180,
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          children:[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
-                  "DEW Project",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/usr1.jpg"),
-                ),
-              ],
-            ),
-            Text.rich(
-              TextSpan(
-                style: const TextStyle(color: Colors.white, height: 1.5),
-                text:
-                "Patrick Barker just sent you a contract with all detailed information.",
-                children: [
-                  TextSpan(
-                    text: " Sign here",
-                    style: TextStyle(color: Themes.textColor),
-                    recognizer: TapGestureRecognizer(),
-                  ),
-                  const TextSpan(text: " and attach an invoice to send back."),
-                ],
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

@@ -14,7 +14,7 @@ class FeeExpenseHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(colorPrimary),
-        title: const Text("LGU Transports"),
+        title: const Text("University Fee & Expenses"),
       ),
       body: ListView(
         children: <Widget>[
@@ -91,7 +91,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),
@@ -340,7 +340,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),
@@ -620,7 +620,7 @@ class FeeExpenseHome extends StatelessWidget {
                   DataRow(
                     cells: <DataCell>[
                       DataCell(Text(
-                        'Bachelor in Civil Engineering',
+                        'Bachelor in Civil (Eng)',
                         style: TextStyle(
                             fontSize: 15, fontFamily: 'Times New Roman'),
                       )),
@@ -640,7 +640,7 @@ class FeeExpenseHome extends StatelessWidget {
                     cells: <DataCell>[
                       DataCell(
                         Text(
-                          'Bachelor of Electrical Engineering',
+                          'Bachelor of Electrical (Eng)',
                         ),
                       ),
                       DataCell(Text(
@@ -673,7 +673,7 @@ class FeeExpenseHome extends StatelessWidget {
                   DataRow(
                     cells: <DataCell>[
                       DataCell(Text(
-                        'Master of Structural Engineering',
+                        'Master of Structural',
                         style: TextStyle(fontSize: 16),
                       )),
                       DataCell(
@@ -784,7 +784,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),
@@ -954,7 +954,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),
@@ -1146,7 +1146,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),
@@ -1226,7 +1226,7 @@ class FeeExpenseHome extends StatelessWidget {
                     label: Text(
                       'Total Fee',
                       style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontFamily: 'Times New Roman'),

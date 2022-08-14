@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_screen/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
-import '../../app_theme/theme.dart';
-import '../../widgets/custom_card.dart';
 import '../home/banners/home_banner.dart';
 
 class AdmissionPolicyHome extends StatelessWidget {
@@ -58,7 +55,7 @@ class AdmissionPolicyHome extends StatelessWidget {
               ),
             ),
             const ListTile(
-              title: Text('HEC Scholarships Policy',
+              title: Text('University Scholarships Programs',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -71,187 +68,54 @@ class AdmissionPolicyHome extends StatelessWidget {
                     color: Colors.blue),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0),
-              child: SizedBox(
-                height: 200.0,
-                child: ListView(
-                  // This next line does the trick.
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      width: Get.width * 0.60,
-                      height: Get.height * 0.100,
-                      padding:
-                          const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                      child: CustomCard(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              alignment: Alignment.center,
-                              children: <Widget>[
-                                ClipRRect(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(
-                                          AppThemeInfo.borderRadius)),
-                                  child: Image.network(
-                                    'https://www.britishcouncil.in/sites/default/files/indian_students_uk_00340.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8, bottom: 4),
-                              child: Text(
-                                'Performance Based Scholarship',
-                                maxLines: 2,
-                                style: Get.textTheme.bodyText1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      width: Get.width * 0.60,
-                      height: Get.height * 0.100,
-                      padding:
-                          const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                      child: CustomCard(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              alignment: Alignment.center,
-                              children: <Widget>[
-                                ClipRRect(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(
-                                          AppThemeInfo.borderRadius)),
-                                  child: Image.network(
-                                    'https://www.wccusd.net/cms/lib/CA01001466/Centricity/Domain/87/Newsletter%20promo.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8, bottom: 4),
-                              child: Text(
-                                'Garrison & Kinship Based Scholarship',
-                                maxLines: 2,
-                                style: Get.textTheme.bodyText1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      width: Get.width * 0.60,
-                      height: Get.height * 0.100,
-                      padding:
-                          const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                      child: CustomCard(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              alignment: Alignment.center,
-                              children: <Widget>[
-                                ClipRRect(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(
-                                          AppThemeInfo.borderRadius)),
-                                  child: Image.network(
-                                    'https://media.istockphoto.com/photos/online-education-course-elearning-class-and-ebook-digital-technology-picture-id1225470365?k=20&m=1225470365&s=612x612&w=0&h=B-dLbH8aSEYAZRJ4gDvYhxGjQO2wt92bUVvE2Y_sHIg=',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8, bottom: 4),
-                              child: Text(
-                                'LGU Employee Based Fee Concession ',
-                                maxLines: 2,
-                                style: Get.textTheme.bodyText1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      width: Get.width * 0.60,
-                      height: Get.height * 0.100,
-                      padding:
-                          const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                      child: CustomCard(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              alignment: Alignment.center,
-                              children: <Widget>[
-                                ClipRRect(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(
-                                          AppThemeInfo.borderRadius)),
-                                  child: Image.network(
-                                    'https://thumbs.dreamstime.com/b/portrait-asian-female-student-wearing-graduated-uniform-holding-certification-standing-smiling-happiness-227057227.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8, bottom: 4),
-                              child: Text(
-                                'LGU Offer Need Based Scholarship',
-                                maxLines: 2,
-                                style: Get.textTheme.bodyText1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                  ],
+            const Padding(
+              padding: EdgeInsets.only(left: 16.0),
+              child: Text(
+                'University of South Asia Offers different scholarship programs',
+                style: TextStyle(
+                  fontSize: 14,
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 10.0, bottom: 10.0),
+              child: Table(
+                defaultColumnWidth: const FixedColumnWidth(190.0),
+                border: TableBorder.all(style: BorderStyle.solid, width: 1),
+                children: [
+                  TableRow(children: [
+                    Column(children: const [
+                      Text('Marks Percentage', style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold))
+                    ]),
+                    Column(children: const [
+                      Text('Percentage', style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold))
+                    ]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('70% to 74.99% Marks In Inter')]),
+                    Column(children: const [Text('20%')]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('75% to 79.99% Marks In Inter')]),
+                    Column(children: const [Text('25%')]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('80% to 84.99% Marks In Inter')]),
+                    Column(children: const [Text('30%')]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('85% to 90.99% Marks In Inter')]),
+                    Column(children: const [Text('50%')]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('90% to 95.99% Marks In Inter')]),
+                    Column(children: const [Text('70%')]),
+                  ]),
+                  TableRow(children: [
+                    Column(children: const [Text('BISE Position Holder in Inter')]),
+                    Column(children: const [Text('100%')]),
+                  ]),
+                ],
               ),
             ),
             ListTile(

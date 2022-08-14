@@ -5,7 +5,6 @@ import 'package:flutter_login_screen/ui/Department_Courses/department_courses_ho
 import 'package:flutter_login_screen/ui/Page_Not_Found/page_notfound.dart';
 import 'package:flutter_login_screen/ui/Society_Events/society_event_home.dart';
 import 'package:flutter_login_screen/ui/Student_Complaints/student_complaints_home.dart';
-import 'package:flutter_login_screen/ui/Student_Hostel_System/student_hostel_home.dart';
 import 'package:get/get.dart';
 import '../ui/About_University/about_university_home.dart';
 import '../ui/Admission_Policy/admission_home.dart';
@@ -14,6 +13,7 @@ import '../ui/Fee_Expenses/fee_expense_home.dart';
 import '../ui/Fyp_Teacher_Profile/teacher_profile_home.dart';
 import '../ui/Labs_Schedule/lab_schedule_home.dart';
 import '../ui/Sports_Complex/sports_complex_home.dart';
+import '../ui/Student_Hostel_System/pages/home/hostel_home_screen.dart';
 import '../ui/University_Library/university_library_home.dart';
 import '../ui/auth/launcherScreen/launcher_screen.dart';
 import '../ui/auth/welcome/welcome_screen.dart';

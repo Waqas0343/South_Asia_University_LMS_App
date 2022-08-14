@@ -76,16 +76,16 @@ class FypTeacherHome extends StatelessWidget {
                   "Babar Hameed",
                 ),
                 PictGridWidget(
-                  "assets/images/usr2.jpg",
-                  "Shane West",
+                  "assets/images/user2.jpg",
+                  "Abidoon Qadir",
                 ),
                 PictGridWidget(
-                  "assets/images/usr3.jpg",
-                  "Shane West",
+                  "assets/images/user3.jpg",
+                  "Ilyas Butt",
                 ),
                 PictGridWidget(
-                  "assets/images/usr4.jpg",
-                  "Shane West",
+                  "assets/images/user5.jpg",
+                  "Masroor Hussain",
                 ),
               ],
             ),
@@ -157,12 +157,12 @@ class FypTeacherHome extends StatelessWidget {
                   "Qalab-e-Abbas",
                 ),
                 PictGridWidget(
-                  "assets/images/usr3.jpg",
-                  "Shane West",
+                  "assets/images/user6.jpg",
+                  "Iqbal Shoukat",
                 ),
                 PictGridWidget(
-                  "assets/images/usr4.jpg",
-                  "Shane West",
+                  "assets/images/user7.jpg",
+                  "Maria Naveed",
                 ),
               ],
             ),
@@ -226,19 +226,19 @@ class FypTeacherHome extends StatelessWidget {
                   crossAxisSpacing: 16),
               children: const [
                 PictGridWidget(
-                  "assets/images/usr9.jpg",
-                  "Shane West",
+                  "assets/images/user8.jpg",
+                  " ",
                 ),
                 PictGridWidget(
-                  "assets/images/usr7.jpg",
-                  "Qalab-e-Abbas",
+                  "assets/images/user9.jpg",
+                  " ",
                 ),
                 PictGridWidget(
-                  "assets/images/usr3.jpg",
-                  "Shane West",
+                  "assets/images/user10.jpg",
+                  " ",
                 ),
                 PictGridWidget(
-                  "assets/images/usr4.jpg",
+                  "assets/images/user11.jpg",
                   "Shane West",
                 ),
               ],

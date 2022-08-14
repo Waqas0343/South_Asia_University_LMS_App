@@ -27,31 +27,28 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   ///list of strings containing onBoarding titles
   final List<String> _titlesList = [
-    'Flutter OnBoarding',
-    'Firebase Auth',
-    'Facebook Login',
-    'Instaflutter.com',
-    'Jump straight into the action.',
+  'STUDENTS GET ADMISSION INFORMATION',
+  'STUDENTS GET TRANSPORTS INFORMATION ',
+  'STUDENT GET UPCOMING EVENTS INFORMATION',
+  'STUDENT GET SPORTS INFORMATION',
   ];
 
   /// list of strings containing onBoarding subtitles, the small text under the
   /// title
   final List<String> _subtitlesList = [
-    'Build your on-boarding flow in seconds.',
-    'Use Firebase for user managements.',
-    'Leverage Facebook to log in user easily.',
-    'Get more awesome templates',
-    'Get Started'
+    'Student Get complete information about admission process for their relevant Course in University of South Asia.',
+    'Student Get complete information about university fee process and Expenses of University of South Asia.',
+    'Student Who are interested in gaming they can take complete information about sports and their Process',
+    'Student Get complete information about Upcoming events arrange from University of South Asia society.',
   ];
 
   /// list containing image paths or IconData representing the image of each page
 
   final List<dynamic> _imageList = [
-    Icons.developer_mode,
-    Icons.layers,
-    Icons.account_circle,
-    Icons.account_circle_rounded,
-    Icons.code
+    'assets/images/student.png',
+    'assets/images/students.png',
+    'assets/images/parent.png',
+    'assets/images/spoot.png',
   ];
 
   @override

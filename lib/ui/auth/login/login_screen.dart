@@ -99,7 +99,6 @@ class _LoginScreen extends State<LoginScreen> {
                         child: TextFormField(
                             textAlignVertical: TextAlignVertical.center,
                             textInputAction: TextInputAction.next,
-                            obscureText: true,
                             validator: validateEmail,
                             onSaved: (String? val) {
                               email = val;

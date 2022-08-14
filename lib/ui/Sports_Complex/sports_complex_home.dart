@@ -149,7 +149,7 @@ class ChoiceCard extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: CustomCard(
+      child: Card(
         color: Colors.white,
         child: Column(
           children: [

@@ -25,7 +25,7 @@ class StudentFormData extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(colorPrimary),
-        title: const Text("Form Data"),
+        title: const Text("Share Your Form Data"),
       ),
       body: Center(
         child: Column(

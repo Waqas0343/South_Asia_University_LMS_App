@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_login_screen/model/user.dart';
 import 'package:flutter_login_screen/services/helper.dart';
+import 'package:flutter_login_screen/ui/University_Cafeteria/university_cafe.dart';
 import 'package:flutter_login_screen/ui/auth/authentication_bloc.dart';
 import 'package:flutter_login_screen/ui/auth/welcome/welcome_screen.dart';
 import 'package:flutter_login_screen/widgets/home_card.dart';
@@ -10,6 +11,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import '../../routes/routes.dart';
+import '../University_Calculator/university_ranking_home.dart';
 import 'banners/home_banner.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -131,13 +133,13 @@ class _HomeState extends State<HomeScreen> {
                   ),
                 ),
                 title: const Text(
-                  'University Ranking',
+                  'GPA Calculator',
                   style: TextStyle(color: Colors.black),
                 ),
                 trailing: Transform.rotate(
                     angle: pi / 1, child: const Icon(Icons.arrow_back_ios)),
                 onTap: () {
-                  context.read<AuthenticationBloc>().add(LogoutEvent());
+                 Get.to(()=> const GPACalculator());
                 },
               ),
               ListTile(
@@ -158,7 +160,7 @@ class _HomeState extends State<HomeScreen> {
                   ),
                 ),
                 onTap: () {
-                  context.read<AuthenticationBloc>().add(LogoutEvent());
+                 Get.to(()=> const UniversityCafe());
                 },
               ),
               ListTile(
@@ -182,27 +184,7 @@ class _HomeState extends State<HomeScreen> {
                   context.read<AuthenticationBloc>().add(LogoutEvent());
                 },
               ),
-              ListTile(
-                leading: CircleAvatar(
-                  radius: 15,
-                  child: ClipOval(
-                    child: Image.asset('assets/images/lo.jpeg'),
-                  ),
-                ),
-                title: const Text(
-                  'University Library',
-                  style: TextStyle(color: Colors.black),
-                ),
-                trailing: Transform.rotate(
-                  angle: pi / 1,
-                  child: const Icon(
-                    Icons.arrow_back_ios,
-                  ),
-                ),
-                onTap: () {
-                  Get.toNamed(AppRoutes.libraries);
-                },
-              ),
+
               ListTile(
                 leading: CircleAvatar(
                   radius: 15,
@@ -224,6 +206,29 @@ class _HomeState extends State<HomeScreen> {
                   Get.toNamed(AppRoutes.studentComplaintHome);
                 },
               ),
+
+              ListTile(
+                leading: CircleAvatar(
+                  radius: 15,
+                  child: ClipOval(
+                    child: Image.asset('assets/images/lo.jpeg'),
+                  ),
+                ),
+                title: const Text(
+                  'University Library',
+                  style: TextStyle(color: Colors.black),
+                ),
+                trailing: Transform.rotate(
+                  angle: pi / 1,
+                  child: const Icon(
+                    Icons.arrow_back_ios,
+                  ),
+                ),
+                onTap: () {
+                  Get.toNamed(AppRoutes.libraries);
+                },
+              ),
+
               ListTile(
                 leading: CircleAvatar(
                   radius: 15,

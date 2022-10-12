@@ -4,10 +4,11 @@ import 'package:get/get.dart';
 
 class Banners extends StatelessWidget {
   final _imageList = [
+    'assets/images/banners/banner4.jpg',
     'assets/images/banners/banner1.jpg',
     'assets/images/banners/banner2.png',
     'assets/images/banners/banner3.jpg',
-    'assets/images/banners/banner4.jpg',
+
   ];
 
   Banners({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class Banners extends StatelessWidget {
               onPageChanged: (index, reason) {
                 _current(index);
               },
-              aspectRatio: 16 / 10,
+              aspectRatio: 16 / 9,
               autoPlayInterval: const Duration(seconds: 8),
               autoPlayAnimationDuration: const Duration(seconds: 3),
               viewportFraction: 1.0),

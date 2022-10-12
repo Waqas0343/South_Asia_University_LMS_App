@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login_screen/routes/routes.dart';
 import 'package:flutter_login_screen/widgets/tools_widget.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher_string.dart';
-
 import '../app_Icons/icons.dart';
+import '../ui/Courses_Enrollment/student_web_view.dart';
 import 'custom_card.dart';
-import 'loading_spinner.dart';
 
 class HomeCard extends StatelessWidget {
   const HomeCard({Key? key}) : super(key: key);
@@ -35,7 +33,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                     icon: MyIcons.icFee,
-                    title: "University Fee and Expenses",
+                    title: "University Expenses, Fee",
                     onTap: () => Get.toNamed(AppRoutes.feeExpenseHome)),
               ),
               const SizedBox(
@@ -92,10 +90,9 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icCourses,
-                  title: "Student Courses Enrollment",
+                  title: "Courses Enrollment",
                   onTap: () {
-                    launchUrlString('https://portal-usa-edu.com/');
-                    Get.dialog(const LoadingSpinner());
+                    Get.to(()=> const StudentPortal());
                   },
                 ),
               ),
@@ -213,7 +210,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icSociety,
-                  title: "University Clubs & Societies",
+                  title: "University Clubs/Societies",
                   onTap: () {
                     Get.toNamed(AppRoutes.societiesEventHome);
                   },
@@ -225,7 +222,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icComplaint,
-                  title: "University Student Complaints",
+                  title: "Student Complaints Box",
                   onTap: () {
                     Get.toNamed(AppRoutes.studentComplaintHome);
                   },

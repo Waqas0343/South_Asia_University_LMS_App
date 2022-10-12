@@ -26,7 +26,7 @@ class LabsHome extends StatelessWidget {
                 ]),
               ]),
               TableRow(children: [
-                Column(children: const [Text('Fundamental of Programming LAB')]),
+                Column(children: const [Text(' Fundamental of Programming LAB')]),
                 Column(children: const [Text('09:00 - 10:00')]),
               ]),
               TableRow(children: [
@@ -34,11 +34,13 @@ class LabsHome extends StatelessWidget {
                 Column(children: const [Text('10:30 - 11:30')]),
               ]),
               TableRow(children: [
-                Column(children: const [Text('Data Structure Programming LAB')]),
+                Column(
+                    children: const [
+                      Text('Data Structure Programming LAB')]),
                 Column(children: const [Text('12:00 - 01:00')]),
               ]),
               TableRow(children: [
-                Column(children: const [Text('Artificial Intelligence Programming Lab')]),
+                Column(children: const [Text('Artificial Intelligence Pro. Lab')]),
                 Column(children: const [Text('01:30 - 02:30')]),
               ]),
               TableRow(children: [

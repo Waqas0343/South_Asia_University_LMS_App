@@ -13,8 +13,9 @@ class AboutUniversityHome extends StatelessWidget {
       Choice(
           title: 'About University of South Asia',
           date: 'Project Of Gateway Technology',
-          description: 'Establishment of University of South Asia in the Provincial Metropolis city of Lahore is an Important Milestone in the history of higher education in Pakistan. In order to meet the global challenges it is necessary to touch the highest literacy rates while producing skillful and of excellence and quality education in minimum possible time. At present, USA is running Undergraduate, Graduate and Postgraduate, M.Phil and Ph.D Programmes in various disciplines. Main campus of USA is located at the most developed area of Lahore Defence Phase-VI, which is easily approaches through Ring Road. The campus spreads on 65 kanals land comprises of multi story academic blocks with spacious class rooms well equipped Labs, auditorium library and cafeteria. Highly qualified and experienced faculty has been hired to educate the students with latest developments in each discipline and enhance their creative abilities.USA student is not only determined to produce best professionals of international standards in social and basic sciences but also focused to contribute in national development through research and development. ',
-          imglink: 'https://talloiresnetwork.tufts.edu/wp-content/uploads/Talloires1.jpg'),
+          description:
+              'Establishment of University of South Asia in the Provincial Metropolis city of Lahore is an Important Milestone in the history of higher education in Pakistan. In order to meet the global challenges it is necessary to touch the highest literacy rates while producing skillful and of excellence and quality education in minimum possible time. At present, USA is running Undergraduate, Graduate and Postgraduate, M.Phil and Ph.D Programmes in various disciplines. Main campus of USA is located at the most developed area of Lahore Defence Phase-VI, which is easily approaches through Ring Road. The campus spreads on 65 kanals land comprises of multi story academic blocks with spacious class rooms well equipped Labs, auditorium library and cafeteria. Highly qualified and experienced faculty has been hired to educate the students with latest developments in each discipline and enhance their creative abilities.USA student is not only determined to produce best professionals of international standards in social and basic sciences but also focused to contribute in national development through research and development. ',
+          imglink: 'assets/images/about_us.jpg'),
       Choice(
           title: 'Vision Statement ',
           date: 'University of South Asia',
@@ -80,7 +81,8 @@ class Choice {
 class ChoiceCard extends StatelessWidget {
   const ChoiceCard(
       {Key? key,
-      required this.choice, this.onTap,
+      required this.choice,
+      this.onTap,
       required this.item,
       this.selected = false})
       : super(key: key);
@@ -105,10 +107,12 @@ class ChoiceCard extends StatelessWidget {
         color: Colors.white,
         child: Column(
           children: [
-
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.network(choice.imglink)),
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset(
+                choice.imglink,
+              ),
+            ),
             Container(
               padding: const EdgeInsets.all(10.0),
               child: Column(

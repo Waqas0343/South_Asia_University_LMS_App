@@ -15,7 +15,7 @@ class CampusViewHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(colorPrimary),
-        title: const Text("Select For Move"),
+        title: const Text("University MAP Tracker"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -25,8 +25,7 @@ class CampusViewHome extends StatelessWidget {
               child: Image(
                 height: MediaQuery.of(context).size.height / 3,
                 fit: BoxFit.cover,
-                image: const AssetImage(
-                    'assets/images/map.jpg'),
+                image: const AssetImage('assets/images/map.jpg'),
               ),
             ),
             const SizedBox(
@@ -36,7 +35,7 @@ class CampusViewHome extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text("Select Your Place:",
+                  child: Text("Select For Map Place:",
                       style: Theme.of(context).textTheme.headline6)),
             ),
             const SizedBox(
@@ -49,7 +48,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forDeanOffice(),
+                      onTap: () => controller.computerScience(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -80,7 +79,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For Dean Office',
+                                  'Dep. Computer Science',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -91,7 +90,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forMedia(),
+                      onTap: () => controller.architectureDepartment(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -122,7 +121,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For Media Lab',
+                                  'Dep. Architecture Department',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -143,101 +142,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forBioloy(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.70,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Biology Lab',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => controller.forNetworkingLab(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.80,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Networking Lab',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: SizedBox(
-                height: 180.0,
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => controller.forAdminBlock(),
+                      onTap: () => controller.fashionDesigning(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -268,7 +173,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For Admin Block',
+                                  'Dep. Fashion Design',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -279,7 +184,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forCafeteria(),
+                      onTap: () => controller.examinationDepartment(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -310,7 +215,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For Cafeteria',
+                                  'Dep. Examination',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -331,7 +236,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forGround(),
+                      onTap: () => controller.accountDepartment(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -362,7 +267,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For Girls Ground',
+                                  'Dep. Accounts',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -373,7 +278,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forCricketGround(),
+                      onTap: () => controller.admissionOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -404,7 +309,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For Cricket Ground',
+                                  'Admission Office',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -425,203 +330,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forSportsComplex(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.70,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Sports Complex',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => controller.forFountainPark(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.80,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Fountain Park',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: SizedBox(
-                height: 180.0,
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => controller.forMasjid(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.80,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Masjid ',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => controller.forRebotics(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.80,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 8, bottom: 4, top: 8),
-                                child: Text(
-                                  'Press For Robotics Lab',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                  child: Text("Press For New Building",
-                      style: Theme.of(context).textTheme.headline6),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: SizedBox(
-                height: 180.0,
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => controller.forNewBlock(),
+                      onTap: () => controller.resourceCenter(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -652,7 +361,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 1-4 Classes On Ground Floor',
+                                  'Resource Center',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -663,7 +372,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forNewBlock(),
+                      onTap: () => controller.serverOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -691,10 +400,10 @@ class CampusViewHome extends StatelessWidget {
                                 height: 4,
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 13-16 Classes On 1st Floor',
+                                  'RC Server Room',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -715,7 +424,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forNewBlock(),
+                      onTap: () => controller.prayerRoom(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -739,14 +448,11 @@ class CampusViewHome extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              const SizedBox(
-                                height: 4,
-                              ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 17-20 Classes On Ground Floor',
+                                  'Prayer Area',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -757,7 +463,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forNewBlock(),
+                      onTap: () => controller.cricketGround(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -785,10 +491,10 @@ class CampusViewHome extends StatelessWidget {
                                 height: 4,
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 25-28 Classes On 4th Floor',
+                                  'Cricket Ground',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -809,49 +515,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forNewBlock2(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.70,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
-                                child: Text(
-                                  'Press For 5-8 Classes On Ground Floor',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => controller.forNewBlock2(),
+                      onTap: () => controller.DBlock(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -879,62 +543,10 @@ class CampusViewHome extends StatelessWidget {
                                 height: 4,
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 9-12 Classes On 2nd Floor',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: SizedBox(
-                height: 180.0,
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => controller.forNewBlock2(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.70,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
-                                child: Text(
-                                  'Press For 21-24 Classes On Third Floor',
+                                  'Business Department',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -945,7 +557,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forNewBlock2(),
+                      onTap: () => controller.hbsLab(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -973,10 +585,10 @@ class CampusViewHome extends StatelessWidget {
                                 height: 4,
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 29-32 Classes On 4th Floor',
+                                  'Haleem Bano Lab',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -991,24 +603,13 @@ class CampusViewHome extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                  child: Text("Press For Old Building",
-                      style: Theme.of(context).textTheme.headline6),
-                ),
-              ),
-            ),
-            Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: SizedBox(
                 height: 180.0,
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forOldBuilding(),
+                      onTap: () => controller.dptDepartment(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -1039,7 +640,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding: const EdgeInsets.only(
                                     left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 21-25 Classes On Ground Floor',
+                                  'DPT Department',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1050,7 +651,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forOldBuilding(),
+                      onTap: () => controller.hodOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -1081,7 +682,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 33-35 Classes On 1st Floor',
+                                  'HOD Office',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1102,7 +703,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forOldBuilding(),
+                      onTap: () => controller.adminOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -1133,7 +734,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 45-49 Classes On Third Floor',
+                                  'Admin Office',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1144,7 +745,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingInside(),
+                      onTap: () => controller.registrarOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -1175,7 +776,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 50-53 Classes On Ground Floor',
+                                  'Registrar Office',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1196,7 +797,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingInside(),
+                      onTap: () => controller.registrarSecitariate(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -1227,7 +828,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 59-63 Classes On First Floor',
+                                  'Registrar Secitariate',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1238,7 +839,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingInside(),
+                      onTap: () => controller.washroom(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -1269,7 +870,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 69-73 Classes On 2nd Floor',
+                                  'Washrooms',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1290,7 +891,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingOutside(),
+                      onTap: () => controller.hodOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -1321,7 +922,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 54-658 Classes On Ground Floor',
+                                  'Café',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1332,7 +933,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingOutside(),
+                      onTap: () => controller.hodOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -1363,7 +964,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 64-68 Classes On 2nd Floor',
+                                  'Tennis Ground',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1384,7 +985,7 @@ class CampusViewHome extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => controller.forOldBuildingOutside(),
+                      onTap: () => controller.tennisGround(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.70,
@@ -1412,10 +1013,10 @@ class CampusViewHome extends StatelessWidget {
                                 height: 4,
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
+                                padding: const EdgeInsets.only(
+                                    left: 8, bottom: 4, top: 8),
                                 child: Text(
-                                  'Press For 74-77 Classes On 3rd Floor',
+                                  'Stationary Shop',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),
@@ -1426,7 +1027,7 @@ class CampusViewHome extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => controller.forUsman(),
+                      onTap: () => controller.adminOffice(),
                       child: Container(
                         width: Get.width * 0.48,
                         height: Get.height * 0.80,
@@ -1457,101 +1058,7 @@ class CampusViewHome extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.only(left: 8, bottom: 4),
                                 child: Text(
-                                  'Press For 26-30 Classes On 2nd Floor',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: SizedBox(
-                height: 180.0,
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => controller.forUsman(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.70,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
-                                child: Text(
-                                  'Press For 38-42 Classes On 3rd Floor',
-                                  maxLines: 2,
-                                  style: Get.textTheme.bodyText1,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => controller.forUsman(),
-                      child: Container(
-                        width: Get.width * 0.48,
-                        height: Get.height * 0.80,
-                        padding:
-                            const EdgeInsets.only(right: 10, top: 5, bottom: 5),
-                        child: CustomCard(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Stack(
-                                alignment: Alignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            AppThemeInfo.borderRadius)),
-                                    child: Image.network(
-                                      'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/326/978/datas/original.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, bottom: 4),
-                                child: Text(
-                                  'Press For Usman Shukat Hall-18',
+                                  'Parking',
                                   maxLines: 2,
                                   style: Get.textTheme.bodyText1,
                                 ),

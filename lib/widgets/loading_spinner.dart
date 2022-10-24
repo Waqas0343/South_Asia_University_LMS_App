@@ -19,7 +19,8 @@ class LoadingSpinner extends StatelessWidget {
           Text(
             "Please Wait...",
             style: Get.theme.textTheme.subtitle2,
-          )
+          ),
+
         ],
       ),
     );

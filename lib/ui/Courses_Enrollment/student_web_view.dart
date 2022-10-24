@@ -9,22 +9,22 @@ class StudentPortal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    RxBool isLoading = true.obs;
+    RxBool isLoading = RxBool(true);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: MyColors.primaryColor,
-        title: const Text('Welcome to Student Portal'),
+        title: const Text('USA Student Portal'),
       ),
-      body: Stack(
-        children: <Widget>[
-          WebView(
-            initialUrl: 'https://portal-usa-edu.com/',
-            onPageFinished: (_) {
-              isLoading.value = false;
-            },
-          ),
-          isLoading.value ? const Center(child: LoadingSpinner()) : Container(),
-        ],
+      body: Obx(()=> Stack(
+          children: <Widget>[
+            WebView(
+             onPageStarted: (_)=>  isLoading.value,
+              initialUrl: 'https://portal-usa-edu.com/',
+             onPageFinished: (_)=>  isLoading.value = false,
+            ),
+            isLoading.value ? const Center(child: LoadingSpinner()) : Container(),
+          ],
+        ),
       ),
     );
   }

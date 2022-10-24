@@ -21,7 +21,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icAdmission,
-                  title: "University Admission Policy",
+                  title: "Admission Policy",
                   onTap: () {
                     Get.toNamed(AppRoutes.admissionPolicyHome);
                   },
@@ -92,7 +92,7 @@ class HomeCard extends StatelessWidget {
                   icon: MyIcons.icCourses,
                   title: "Courses Enrollment",
                   onTap: () {
-                    Get.to(()=> const StudentPortal());
+                    Get.to(()=> StudentPortal());
                   },
                 ),
               ),
@@ -138,7 +138,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icExam,
-                  title: "University Exams Schedule",
+                  title: "Exams Schedule",
                   onTap: () {
                     Get.toNamed(AppRoutes.examScheduleHome);
                   },
@@ -162,7 +162,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icStudent,
-                  title: "Student Hostel System",
+                  title: "Student Hostel",
                   onTap: () {
                     Get.toNamed(AppRoutes.studentHostelHome);
                   },
@@ -198,7 +198,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icSports,
-                  title: "University Sports/ Games",
+                  title: "Sports, Games Program",
                   onTap: () {
                     Get.toNamed(AppRoutes.sportsComplexHome);
                   },
@@ -210,7 +210,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icSociety,
-                  title: "University Clubs/Societies",
+                  title: "Clubs, Societies",
                   onTap: () {
                     Get.toNamed(AppRoutes.societiesEventHome);
                   },
@@ -222,7 +222,7 @@ class HomeCard extends StatelessWidget {
               Expanded(
                 child: ToolsWidget(
                   icon: MyIcons.icComplaint,
-                  title: "Student Complaints Box",
+                  title: "Complaints Box",
                   onTap: () {
                     Get.toNamed(AppRoutes.studentComplaintHome);
                   },

@@ -119,6 +119,7 @@ class _LoginScreen extends State<LoginScreen> {
                         child: TextFormField(
                             textAlignVertical: TextAlignVertical.center,
                             obscureText: true,
+
                             validator: validatePassword,
                             onSaved: (String? val) {
                               password = val;
